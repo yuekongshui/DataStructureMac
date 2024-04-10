@@ -21,7 +21,6 @@ struct ContentView: View {
     
     // MARK: 初始化菜单
     init() {
-        menus["数组"] = [Menu(name: "数组", view: ArrayListView())]
         menus["链表"] = [
             Menu(name: "链表", view: LinkedListView()),
             Menu(name:"双向链表", view: DoubleLinkedListView()),
