@@ -14,8 +14,6 @@
 		04917AB22BC54C550090B36B /* DataStructureMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04917AB12BC54C550090B36B /* DataStructureMacTests.swift */; };
 		04917ABC2BC54C550090B36B /* DataStructureMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04917ABB2BC54C550090B36B /* DataStructureMacUITests.swift */; };
 		04917ABE2BC54C550090B36B /* DataStructureMacUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04917ABD2BC54C550090B36B /* DataStructureMacUITestsLaunchTests.swift */; };
-		04917ACD2BC551190090B36B /* ArrayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04917ACC2BC551190090B36B /* ArrayListView.swift */; };
-		04917ACF2BC551370090B36B /* ArrayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04917ACE2BC551370090B36B /* ArrayList.swift */; };
 		04917AD62BC5517F0090B36B /* DoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04917AD52BC5517F0090B36B /* DoubleLinkedList.swift */; };
 		04917AD82BC5518A0090B36B /* DoubleLinkedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04917AD72BC5518A0090B36B /* DoubleLinkedListView.swift */; };
 		04917ADB2BC551D40090B36B /* LinkedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04917ADA2BC551D40090B36B /* LinkedListView.swift */; };
@@ -64,8 +62,6 @@
 		04917AB72BC54C550090B36B /* DataStructureMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructureMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04917ABB2BC54C550090B36B /* DataStructureMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructureMacUITests.swift; sourceTree = "<group>"; };
 		04917ABD2BC54C550090B36B /* DataStructureMacUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructureMacUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		04917ACC2BC551190090B36B /* ArrayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayListView.swift; sourceTree = "<group>"; };
-		04917ACE2BC551370090B36B /* ArrayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayList.swift; sourceTree = "<group>"; };
 		04917AD52BC5517F0090B36B /* DoubleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLinkedList.swift; sourceTree = "<group>"; };
 		04917AD72BC5518A0090B36B /* DoubleLinkedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLinkedListView.swift; sourceTree = "<group>"; };
 		04917ADA2BC551D40090B36B /* LinkedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListView.swift; sourceTree = "<group>"; };
@@ -172,7 +168,6 @@
 		04917ACA2BC550F80090B36B /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
-				04917ACB2BC551030090B36B /* ArrayList */,
 				04917AD32BC551640090B36B /* LinkedList */,
 				04917ADF2BC551F10090B36B /* SkipList */,
 				04917AE42BC5521F0090B36B /* Stack */,
@@ -183,15 +178,6 @@
 				04917AD02BC551440090B36B /* Chart */,
 			);
 			path = DataStructure;
-			sourceTree = "<group>";
-		};
-		04917ACB2BC551030090B36B /* ArrayList */ = {
-			isa = PBXGroup;
-			children = (
-				04917ACE2BC551370090B36B /* ArrayList.swift */,
-				04917ACC2BC551190090B36B /* ArrayListView.swift */,
-			);
-			path = ArrayList;
 			sourceTree = "<group>";
 		};
 		04917AD02BC551440090B36B /* Chart */ = {
@@ -451,8 +437,6 @@
 				04917AED2BC576EB0090B36B /* Stack.swift in Sources */,
 				04917AA22BC54C520090B36B /* ContentView.swift in Sources */,
 				04917AD82BC5518A0090B36B /* DoubleLinkedListView.swift in Sources */,
-				04917ACF2BC551370090B36B /* ArrayList.swift in Sources */,
-				04917ACD2BC551190090B36B /* ArrayListView.swift in Sources */,
 				04917AFF2BC643450090B36B /* DoubleCircularLinkedList.swift in Sources */,
 				04917AE72BC56AF20090B36B /* Menu.swift in Sources */,
 				04917AF72BC642C00090B36B /* CircularQueue.swift in Sources */,
