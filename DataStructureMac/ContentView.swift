@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import OrderedCollections
 
 //let menus: [String] = ["数组", "链表", "跳表", "栈", "队列", "树", "堆", "散列表", "图"]
 
@@ -17,23 +18,7 @@ struct ContentView: View {
     
     @StateObject var store = MenusStore()
     
-    var menus: Dictionary<String, Array<Menu>> = Dictionary()
-    
-    // MARK: 初始化菜单
-    init() {
-        menus["链表"] = [
-            Menu(name: "链表", view: LinkedListView()),
-            Menu(name:"双向链表", view: DoubleLinkedListView()),
-            Menu(name:"环形链表", view: CircularLinkedListView()),
-            Menu(name:"双向环形链表", view: DoubleCircularLinkedListView())
-        ]
-        menus["跳表"] = [Menu(name: "跳表", view: SkipListView())]
-        menus["栈"] = [Menu(name: "栈", view: StackView())]
-        menus["队列"] = [
-            Menu(name: "队列", view: QueueView()),
-            Menu(name: "环形队列", view: CircularQueueView()),
-        ]
-    }
+	private var menus = MainMenuModel().mainMenuItems
     
     var body: some View {
         NavigationSplitView {
@@ -50,11 +35,11 @@ struct SideBarView: View {
     
     @EnvironmentObject var store: MenusStore
     
-    var menus: Dictionary<String, Array<Menu>> = Dictionary()
+    var menus = OrderedDictionary<String, Array<Menu>>()
     
     var body: some View {
         ScrollView() {
-            ForEach(self.menus.keys.sorted(), id: \.self) { tag in
+            ForEach(self.menus.keys, id: \.self) { tag in
                 Section(header: Text(tag)) {
                     List(self.menus[tag]!, id: \.self, selection: self.$store.selection) { child in
                         Text(child.name)

@@ -31,6 +31,12 @@
 		04917AFD2BC643220090B36B /* CircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04917AFC2BC643220090B36B /* CircularLinkedList.swift */; };
 		04917AFF2BC643450090B36B /* DoubleCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04917AFE2BC643440090B36B /* DoubleCircularLinkedList.swift */; };
 		04917B012BC643530090B36B /* DoubleCircularLinkedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04917B002BC643530090B36B /* DoubleCircularLinkedListView.swift */; };
+		E99768D02C5B2DF900D9F46F /* ListException.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99768CF2C5B2DF900D9F46F /* ListException.swift */; };
+		E9F732E92C5B31C800A3A07F /* BitCollections in Frameworks */ = {isa = PBXBuildFile; productRef = E9F732E82C5B31C800A3A07F /* BitCollections */; };
+		E9F732EB2C5B31C800A3A07F /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = E9F732EA2C5B31C800A3A07F /* Collections */; };
+		E9F732ED2C5B31C800A3A07F /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = E9F732EC2C5B31C800A3A07F /* DequeModule */; };
+		E9F732EF2C5B31C800A3A07F /* HashTreeCollections in Frameworks */ = {isa = PBXBuildFile; productRef = E9F732EE2C5B31C800A3A07F /* HashTreeCollections */; };
+		E9F732F12C5B31C800A3A07F /* HeapModule in Frameworks */ = {isa = PBXBuildFile; productRef = E9F732F02C5B31C800A3A07F /* HeapModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +85,7 @@
 		04917AFC2BC643220090B36B /* CircularLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLinkedList.swift; sourceTree = "<group>"; };
 		04917AFE2BC643440090B36B /* DoubleCircularLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleCircularLinkedList.swift; sourceTree = "<group>"; };
 		04917B002BC643530090B36B /* DoubleCircularLinkedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleCircularLinkedListView.swift; sourceTree = "<group>"; };
+		E99768CF2C5B2DF900D9F46F /* ListException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListException.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +93,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F732EB2C5B31C800A3A07F /* Collections in Frameworks */,
+				E9F732F12C5B31C800A3A07F /* HeapModule in Frameworks */,
+				E9F732E92C5B31C800A3A07F /* BitCollections in Frameworks */,
+				E9F732EF2C5B31C800A3A07F /* HashTreeCollections in Frameworks */,
+				E9F732ED2C5B31C800A3A07F /* DequeModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +141,7 @@
 		04917A9E2BC54C520090B36B /* DataStructureMac */ = {
 			isa = PBXGroup;
 			children = (
+				E99768CE2C5B2DDF00D9F46F /* Error */,
 				04917ACA2BC550F80090B36B /* DataStructure */,
 				04917A9F2BC54C520090B36B /* DataStructureMacApp.swift */,
 				04917AA12BC54C520090B36B /* ContentView.swift */,
@@ -300,6 +313,14 @@
 			path = CircularQueue;
 			sourceTree = "<group>";
 		};
+		E99768CE2C5B2DDF00D9F46F /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				E99768CF2C5B2DF900D9F46F /* ListException.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -316,6 +337,13 @@
 			dependencies = (
 			);
 			name = DataStructureMac;
+			packageProductDependencies = (
+				E9F732E82C5B31C800A3A07F /* BitCollections */,
+				E9F732EA2C5B31C800A3A07F /* Collections */,
+				E9F732EC2C5B31C800A3A07F /* DequeModule */,
+				E9F732EE2C5B31C800A3A07F /* HashTreeCollections */,
+				E9F732F02C5B31C800A3A07F /* HeapModule */,
+			);
 			productName = DataStructureMac;
 			productReference = 04917A9C2BC54C520090B36B /* DataStructureMac.app */;
 			productType = "com.apple.product-type.application";
@@ -364,7 +392,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1530;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					04917A9B2BC54C520090B36B = {
 						CreatedOnToolsVersion = 15.3;
@@ -388,6 +416,9 @@
 				Base,
 			);
 			mainGroup = 04917A932BC54C520090B36B;
+			packageReferences = (
+				E9F732E72C5B31C800A3A07F /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = 04917A9D2BC54C520090B36B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -435,6 +466,7 @@
 				04917AEF2BC577020090B36B /* Queue.swift in Sources */,
 				04917AF92BC642CC0090B36B /* CircularQueueView.swift in Sources */,
 				04917AED2BC576EB0090B36B /* Stack.swift in Sources */,
+				E99768D02C5B2DF900D9F46F /* ListException.swift in Sources */,
 				04917AA22BC54C520090B36B /* ContentView.swift in Sources */,
 				04917AD82BC5518A0090B36B /* DoubleLinkedListView.swift in Sources */,
 				04917AFF2BC643450090B36B /* DoubleCircularLinkedList.swift in Sources */,
@@ -519,6 +551,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -582,6 +615,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -612,6 +646,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"DataStructureMac/Preview Content\"";
 				DEVELOPMENT_TEAM = 82DYU8YTFB;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -639,6 +674,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"DataStructureMac/Preview Content\"";
 				DEVELOPMENT_TEAM = 82DYU8YTFB;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -664,6 +700,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 82DYU8YTFB;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -683,6 +720,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 82DYU8YTFB;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -701,6 +739,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 82DYU8YTFB;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -718,6 +757,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 82DYU8YTFB;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -769,6 +809,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E9F732E72C5B31C800A3A07F /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9F732E82C5B31C800A3A07F /* BitCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9F732E72C5B31C800A3A07F /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = BitCollections;
+		};
+		E9F732EA2C5B31C800A3A07F /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9F732E72C5B31C800A3A07F /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		E9F732EC2C5B31C800A3A07F /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9F732E72C5B31C800A3A07F /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		E9F732EE2C5B31C800A3A07F /* HashTreeCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9F732E72C5B31C800A3A07F /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = HashTreeCollections;
+		};
+		E9F732F02C5B31C800A3A07F /* HeapModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9F732E72C5B31C800A3A07F /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = HeapModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04917A942BC54C520090B36B /* Project object */;
 }
