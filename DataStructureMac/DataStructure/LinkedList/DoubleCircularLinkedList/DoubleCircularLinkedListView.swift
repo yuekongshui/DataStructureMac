@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DoubleCircularLinkedListView: View {
     var body: some View {
-        Text("this is circular circular linked list!")
+        Text("this is double circular linked list!")
     }
 }
 
