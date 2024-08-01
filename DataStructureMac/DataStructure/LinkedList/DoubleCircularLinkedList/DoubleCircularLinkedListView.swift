@@ -1,15 +1,15 @@
 //
-//  CircularDoubleLinkedListView.swift
+//  DoubleCircularLinkedListView.swift
 //  DataStructureMac
 //
-//  Created by ma c on 2024/4/10.
+//  Created by 水月空 on 2024/8/1.
 //
 
 import SwiftUI
 
 struct DoubleCircularLinkedListView: View {
     var body: some View {
-        Text("this is double circular linked list!")
+        Text("this is circular circular linked list!")
     }
 }
 

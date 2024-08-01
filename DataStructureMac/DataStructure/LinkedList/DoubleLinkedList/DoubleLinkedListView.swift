@@ -2,7 +2,7 @@
 //  DoubleLinkedListView.swift
 //  DataStructureMac
 //
-//  Created by ma c on 2024/4/9.
+//  Created by 水月空 on 2024/8/1.
 //
 
 import SwiftUI
